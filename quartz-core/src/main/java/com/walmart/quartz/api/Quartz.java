@@ -7,6 +7,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import com.walmart.quartz.dto.ResponseDto;
 import com.walmart.quartz.model.Response;
 
 public interface Quartz {
@@ -19,6 +20,6 @@ public interface Quartz {
 	@POST
 	@Path("/{jobName}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response doJob(@PathParam("jobName") String name);
+	public ResponseDto doJob(@PathParam("jobName") String name);
 	
 }

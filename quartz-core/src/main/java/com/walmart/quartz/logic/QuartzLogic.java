@@ -6,6 +6,6 @@ public interface QuartzLogic {
 
 	public String getVersion();
 	
-	public Response doJob();
+	public Response doJob(String name);
 
 }
